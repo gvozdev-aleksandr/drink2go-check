@@ -1,0 +1,49 @@
+.user-nav {
+  display: block;
+}
+
+.user-nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.user-nav__item {
+  min-width: 60px;
+}
+
+.user-nav__button {
+  padding: 22px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  & svg {
+    display: block;
+  }
+}
+
+.user-nav__button:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.user-nav__button:hover path,
+.user-nav__button:focus path,
+.user-nav__button:active path,
+.user-nav__button:hover .user-nav__text,
+.user-nav__button:focus .user-nav__text,
+.user-nav__button:active .user-nav__text {
+  color: #7859cf;
+  fill: #7859cf;
+}
+
+.user-nav__button:active {
+  background-color: #f0ebff;
+}
+
+.user-nav__text {
+  text-transform: uppercase;
+  display: none;
+}

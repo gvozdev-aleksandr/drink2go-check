@@ -1,5 +1,14 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-header__logo {
+  width: 72px;
+  padding: 12px 20px;
 }
