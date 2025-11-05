@@ -9,7 +9,41 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="main-header container" data-test="header">
+      <a class="main-header__logo logo">
+        <img class="logo__image" src="#" alt="Drink2Go logo">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">главная</li>
+          <li class="main-nav__item">каталог</li>
+          <li class="main-nav__item">доставка </li>
+          <li class="main-nav__item">о нас</li>
+        </ul>
+      </nav>
+      <nav class="user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <button class="user-nav__link" type="button">
+              <img src="#" alt="войти" class="user-nav__icon">
+              <span class="user-nav__text">войти</span>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__link" type="button">
+              <img src="#" alt="корзина" class="user-nav__icon">
+              <span class="user-nav__text">корзина</span>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__link" type="button">
+              <img src="" alt="открыть меню" class="user-nav__icon">
+              <span class="user-nav__text">открыть меню</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>Страница для старта</h1>
     </main>
