@@ -5,8 +5,7 @@
   align-items: center;
   min-height: 60px;
   padding: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $base-white;
 
   @media (min-width: $tablet-width) {
     align-items: stretch;
