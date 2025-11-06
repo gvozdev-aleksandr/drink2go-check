@@ -9,3 +9,10 @@ img {
   height: auto;
   object-fit: contain;
 }
+
+body {
+  margin: 0;
+  font-family: $montserrat;
+  font-size: 12px;
+  line-height: 16px;
+}

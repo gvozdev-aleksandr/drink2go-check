@@ -1,7 +1,23 @@
 .logo {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: #333333;
 }
 
 .logo__image {
   display: block;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

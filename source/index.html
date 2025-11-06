@@ -11,11 +11,16 @@
   <body class="page__body">
     <header class="main-header container" data-test="header">
       <a class="main-header__logo logo" href="#">
-        <img class="logo__image" src="./images/Drink2Go-logo-mobile.svg" alt="Drink2Go logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/Drink2Go-logo-desktop.svg" width="170px" height="36px">
+          <source media="(min-width: 768px)" srcset="./images/Drink2Go-logo-tablet.svg" width="82px" height="36px">
+          <img class="logo__image" src="./images/Drink2Go-logo-mobile.svg" width="32px" height="36px" alt="Drink2Go logo">
+        </picture>
+        <span class="logo__text">Интернет-магазин кофейных напитков</span>
       </a>
       <nav class="main-nav main-nav--is-close">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="" class="main-nav__link">главная</a></li>
+          <li class="main-nav__item main-nav__item--current"><a href="" class="main-nav__link">главная</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">каталог</a></li>
           <li class="main-nav__item"><a href="" class="main-nav__link">доставка</a> </li>
           <li class="main-nav__item"><a href="" class="main-nav__link">о нас</a></li>
@@ -43,7 +48,7 @@
               <span class="user-nav__text">корзина</span>
             </button>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item user-nav__item--toggle">
             <button class="user-nav__button user-nav__button--toggle" type="button">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 14H0v-1.5h16V14Zm0-5.25H0v-1.5h16v1.5Zm0-5.25H0V2h16v1.5Z" fill="#333" />
