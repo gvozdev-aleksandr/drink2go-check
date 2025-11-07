@@ -1,0 +1,56 @@
+.map {
+  position: relative;
+  min-height: 420px;
+  background-image:
+    image-set(
+      "../../images/map_mobile@1x.webp" type("image/webp") 1x,
+      "../../images/map_mobile@2x.webp" type("image/webp") 2x,
+      "../../images/map_mobile@1x.jpg" type("image/jpg") 1x,
+      "../../images/map_mobile@2x.jpg" type("image/jpg") 2x
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 480px;
+    background-image:
+      image-set(
+        "../../images/map_tablet@1x.webp" type("image/webp") 1x,
+        "../../images/map_tablet@2x.webp" type("image/webp") 2x,
+        "../../images/map_tablet@1x.jpg" type("image/jpg") 1x,
+        "../../images/map_tablet@2x.jpg" type("image/jpg") 2x
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 540px;
+    background-image:
+      image-set(
+        "../../images/map_desktop@1x.webp" type("image/webp") 1x,
+        "../../images/map_desktop@2x.webp" type("image/webp") 2x,
+        "../../images/map_desktop@1x.jpg" type("image/jpg") 1x,
+        "../../images/map_desktop@2x.jpg" type("image/jpg") 2x
+      );
+  }
+}
+
+.map-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 185px;
+  left: calc((156 / 320) * 100vw);
+  width: 38px;
+  height: 50px;
+  background-image: url("../../icons/pin-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 215px;
+    left: calc((380 / 768) * 100vw);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 245px;
+    left: calc((716 / 1440) * 100vw);
+  }
+}
