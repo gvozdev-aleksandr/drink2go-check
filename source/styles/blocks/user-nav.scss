@@ -48,19 +48,21 @@
   }
 }
 
+.user-nav__button-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
 .user-nav__button:focus-visible {
   border: none;
   outline: none;
 }
 
-.user-nav__button:hover path,
-.user-nav__button:focus path,
-.user-nav__button:active path,
-.user-nav__button:hover .user-nav__text,
-.user-nav__button:focus .user-nav__text,
-.user-nav__button:active .user-nav__text {
+.user-nav__button:hover,
+.user-nav__button:focus,
+.user-nav__button:active {
   color: $base-primary;
-  fill: $base-primary;
 }
 
 .user-nav__button:active {

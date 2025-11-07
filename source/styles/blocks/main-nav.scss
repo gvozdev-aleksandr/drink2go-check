@@ -3,6 +3,7 @@
   top: 60px;
   width: 100%;
   display: block;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -33,6 +34,14 @@
 
 .main-nav--is-close .main-nav__list {
   display: none;
+}
+
+.main-nav--is-close ~ .user-nav .user-nav__button-icon {
+  background-image: url("../../icons/burger-icon.svg");
+}
+
+.main-nav:not(.main-nav--is-close) ~ .user-nav .user-nav__button-icon {
+  background-image: url("../../icons/close-icon.svg");
 }
 
 .main-nav__item {

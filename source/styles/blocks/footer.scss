@@ -4,6 +4,8 @@
 
 .main-footer__links {
   display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
   border-bottom: 1px solid $base-secondary;
 }
 
@@ -38,9 +40,32 @@
   text-transform: uppercase;
 }
 
+.main-footer__list--contacts {
+  gap: 16px;
+}
+
+.main-footer__item {
+  position: relative;
+}
+
 .main-footer__item--contacts {
-  text-transform: none;
   padding-left: 19px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 13px;
+    height: 16px;
+  }
+}
+
+.main-footer__item--contacts-adress::before {
+  background-image: url("../../icons/address-icon.svg");
+}
+
+.main-footer__item--contacts-tel::before {
+  background-image: url("../../icons/phone-icon.svg");
 }
 
 .main-footer__link {
@@ -49,6 +74,19 @@
   color: $base-black;
   text-decoration: none;
   letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.main-footer__link--contacts {
+  padding: 0;
 }
 
 .main-footer__copyright {
