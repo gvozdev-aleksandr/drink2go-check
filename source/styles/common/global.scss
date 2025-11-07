@@ -10,10 +10,22 @@ img {
   object-fit: contain;
 }
 
+html,
 body {
+  height: 100&;
   margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: $montserrat;
   font-size: 12px;
   line-height: 16px;
   color: $base-black;
+}
+
+main {
+  flex: 1;
 }
