@@ -1,0 +1,19 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.section-title__description {
+  color: $base-primary;
+  text-transform: uppercase;
+}
+
+.section-title__text {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  line-height: 36px;
+  text-align: center;
+}
