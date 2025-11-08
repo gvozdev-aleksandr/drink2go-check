@@ -2,7 +2,7 @@
   background-color: $base-white;
 }
 
-.features-wrapper {
+.features__wrapper {
   padding-top: 50px;
   padding-bottom: 60px;
 
@@ -15,7 +15,7 @@
   }
 }
 
-.features-wrapper .section-title {
+.features__wrapper .section-title {
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
@@ -103,6 +103,7 @@
 }
 
 .features__description {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
