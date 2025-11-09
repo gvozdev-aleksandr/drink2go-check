@@ -21,3 +21,36 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 window.addEventListener('DOMContentLoaded', handleResize);
 
+const slider = document.getElementById('price-slider');
+const inputMin = document.getElementById('input-min');
+const inputMax = document.getElementById('input-max');
+
+// создаём слайдер
+noUiSlider.create(slider, {
+  start: [0, 900],        // начальные значения
+  connect: true,          // закрашиваем область между бегунками
+  range: {
+    'min': 0,
+    'max': 1000
+  },
+  step: 10
+});
+
+// обновляем поля при движении бегунков
+slider.noUiSlider.on('update', (values, handle) => {
+  const value = Math.round(values[handle]);
+  if (handle === 0) {
+    inputMin.value = value;
+  } else {
+    inputMax.value = value;
+  }
+});
+
+// обновляем бегунки при изменении полей
+inputMin.addEventListener('change', () => {
+  slider.noUiSlider.set([inputMin.value, null]);
+});
+inputMax.addEventListener('change', () => {
+  slider.noUiSlider.set([null, inputMax.value]);
+});
+

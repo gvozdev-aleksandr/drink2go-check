@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="vendor/nouislider.min.css">
   <script src="scripts/index.js" defer></script>
+  <script src="vendor/nouislider.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -209,6 +211,127 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="catalog" data-test="catalog">
+      <div class="catalog__wrapper container">
+        <div class="section-title">
+          <span class="section-title__description">Каталог</span>
+          <h2 class="section-title__text">Каталог кофейных напитков</h2>
+        </div>
+        <form class="catalog__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="catalog__fieldset">
+            <legend class="catalog__fieldset-title">Цена</legend>
+            <div id="catalog__range-slider"></div>
+            <div class="catalog__range-inputs">
+              <label>
+                От:
+                <input type="number" id="input-min" min="0" max="1000" value="0">
+              </label>
+              <label>
+                До:
+                <input type="number" id="input-max" min="0" max="1000" value="900">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="catalog__fieldset">
+            <legend class="catalog__fieldset-title">Наличие молока</legend>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <div class="catalog__item-radio">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--radio" type="radio" name="your-choice"
+                      value="does not matter" checked>
+                    <span class="catalog__radio-mark"></span>
+                    <span class="catalog__radio-name">Неважно</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-radio">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--radio" type="radio" name="your-choice"
+                      value="animal">
+                    <span class="catalog__radio-mark"></span>
+                    <span class="catalog__radio-name">Только животное</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-radio">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--radio" type="radio" name="your-choice"
+                      value="vegetable">
+                    <span class="catalog__radio-mark"></span>
+                    <span class="catalog__radio-name">Только растительное</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-radio">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--radio" type="radio" name="your-choice"
+                      value="whithout milk" disabled>
+                    <span class="catalog__radio-mark"></span>
+                    <span class="catalog__radio-name">Без молока</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog__fieldset">
+            <legend class="catalog__fieldset-title">Страна произрастания</legend>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <div class="catalog__item-checkbox">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--checkbox" type="checkbox" name="Brasil" checked>
+                    <span class="catalog__checkbox-mark"></span>
+                    <span class="catalog__checkbox-name">Бразилия</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-checkbox">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--checkbox" type="checkbox" name="Ephiopy">
+                    <span class="catalog__checkbox-mark"></span>
+                    <span class="catalog__checkbox-name">Эфиопия</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-checkbox">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--checkbox" type="checkbox" name="Columbia">
+                    <span class="catalog__checkbox-mark"></span>
+                    <span class="catalog__checkbox-name">Колумбия</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-checkbox">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--checkbox" type="checkbox" name="Costa-Rika">
+                    <span class="catalog__checkbox-mark"></span>
+                    <span class="catalog__checkbox-name">Коста-Рика</span>
+                  </label>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <div class="catalog__item-checkbox">
+                  <label class="catalog__label">
+                    <input class="catalog__control catalog__control--checkbox" type="checkbox" name="Peru" disabled>
+                    <span class="catalog__checkbox-mark"></span>
+                    <span class="catalog__checkbox-name">Перу</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="catalog__submit-button" type="submit">Применить</button>
+          <button class="catalog__reset-button" type="reset">Сбросить</button>
+        </form>
       </div>
     </section>
     <section class="map" data-test="map">
