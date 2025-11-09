@@ -152,6 +152,7 @@
   &:hover,
   &:focus {
     background-color: $primary-lighter;
+    outline: none;
   }
 
   &:active {
@@ -175,6 +176,12 @@
 
   @media (min-width: $tablet-width) {
     width: 80px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $base-white;
+    outline: none;
   }
 
   &::after {
@@ -240,8 +247,14 @@
   background-color: $base-white;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $primary-opacity;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $base-primary;
   }
 }
 

@@ -127,6 +127,7 @@
   &:hover,
   &:focus {
     color: $primary-lighter;
+    outline: none;
   }
 
   &:active {
