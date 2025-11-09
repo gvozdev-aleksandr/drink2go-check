@@ -7,14 +7,14 @@ openButton.addEventListener('click', (evt) => {
   nav.classList.toggle('main-nav--is-close');
 });
 
-document.addEventListener('click', (event) => {
-  const isClickInsideNav = nav.contains(event.target);
-  const isClickOnButton = openButton.contains(event.target);
+// document.addEventListener('click', (event) => {
+//   const isClickInsideNav = nav.contains(event.target);
+//   const isClickOnButton = openButton.contains(event.target);
 
-  if (!isClickInsideNav && !isClickOnButton) {
-    nav.classList.add('main-nav--is-close');
-  }
-});
+//   if (!isClickInsideNav && !isClickOnButton) {
+//     nav.classList.add('main-nav--is-close');
+//   }
+// });
 
 function handleResize() {
   if (window.innerWidth >= breakpoint) {

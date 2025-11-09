@@ -66,16 +66,24 @@
         <div class="hero__slider">
           <ul class="hero__slider-list">
             <li class="hero__slider-item">
-              <img src="./images/flat-white-mobile@2x.webp" alt="Банка кофе Декаф Флэт Уайт" class="hero__slider-image" width="280"
-                height="280">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./images/flat-white-desktop@1x.webp 1x, ./images/flat-white-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./images/flat-white-tablet@1x.webp 1x, ./images/flat-white-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./images/flat-white-mobile@1x.webp 1x, ./images/flat-white-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1440px)" srcset="./images/flat-white-desktop@1x.png 1x, ./images/flat-white-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./images/flat-white-tablet@1x.png 1x, ./images/flat-white-tablet@2x.png 2x"
+                  width="476" height="476">
+                <img src="./images/flat-white-mobile@1x.png" class="hero__slider-image" width="280" height="280"
+                  srcset="./images/flat-white-mobile@2x.png 2x" alt="Банка кофе Декаф Флэт Уайт">
+              </picture>
               <div class="hero__slider-content">
                   <div class="section-title">
                     <span class="section-title__description">Новинка!</span>
                     <h2 class="section-title__text">Декаф Флэт Уайт</h2>
                   </div>
-                <p class="hero__slider-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
-                  то, что
-                  нужно для расслабления после тяжёлого рабочего дня</p>
+                <p class="hero__slider-description">Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком —
+                  то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
                 <div class="hero__slider-order">
                   <div class="hero__slider-price">
                     <span class="hero__slider-price-old">295₽</span>
@@ -90,14 +98,14 @@
             <button class="hero__slider-pagination-button hero__slider-pagination-button--prev"
               aria-label="Предыдущий слайд"></button>
             <ul class="hero__slider-pagination-list">
-              <li>
-                <button class="hero__slider-pagination-indicator hero__slider-pagination-indicator--active" aria-label="Слайд 1"></button>
+              <li class="hero__slider-pagination-item">
+                <button class="hero__slider-pagination-indicator hero__slider-pagination-indicator--active" type="button" aria-label="Слайд 1"></button>
               </li>
-              <li>
-                <button class="hero__slider-pagination-indicator" aria-label="Слайд 2"></button>
+              <li class="hero__slider-pagination-item">
+                <button class="hero__slider-pagination-indicator" type="button" aria-label="Слайд 2"></button>
               </li>
-              <li>
-                <button class="hero__slider-pagination-indicator" aria-label="Слайд 3"></button>
+              <li class="hero__slider-pagination-item">
+                <button class="hero__slider-pagination-indicator" type="button" aria-label="Слайд 3"></button>
               </li>
             </ul>
             <button class="hero__slider-pagination-button hero__slider-pagination-button--next" aria-label="Следующий слайд"></button>
