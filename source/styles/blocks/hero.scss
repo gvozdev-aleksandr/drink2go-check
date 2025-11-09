@@ -28,6 +28,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  transition: transform 0.5s ease;
 }
 
 .hero__slider-item {
@@ -268,7 +269,7 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: $primary-opacity;
     outline: none;
   }
