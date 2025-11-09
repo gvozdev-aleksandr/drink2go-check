@@ -1,0 +1,151 @@
+.hero {
+  background-color: $flat-white;
+}
+
+.hero__wrapper {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.hero__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero__slider-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero__slider-image {
+  margin-bottom: 10px;
+}
+
+.hero__slider-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__slider-info .section-title {
+  margin-bottom: 10px;
+}
+
+.hero__slider-info .section-title__description {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero__slider-info .section-title__text {
+  font-size: 34px;
+  line-height: 48px;
+}
+
+.hero__slider-description {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.hero__slider-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.hero__slider-price {
+  display: flex;
+  gap: 6px;
+}
+
+.hero__slider-price-old {
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  text-decoration: line-through;
+}
+
+.hero__slider-price-new {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.hero__slider-order-button {
+  padding: 8px 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-white;
+  background-color: $base-primary;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $base-grey;
+  }
+}
+
+.hero__slider-pagination-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.hero__slider-pagination-button--prev {
+  left: 0;
+
+  &:active {
+    background: linear-gradient(to right, $primary-opacity 0%, transparent);
+  }
+
+  &::after {
+    background-image: url("../../icons/arrow-prev.svg");
+  }
+}
+
+.hero__slider-pagination-button--next {
+  right: 0;
+
+  &:active {
+    background: linear-gradient(to left, $primary-opacity 0%, transparent);
+  }
+
+  &::after {
+    background-image: url("../../icons/arrow-next.svg");
+  }
+}
+
+.hero__slider-pagination-list {
+  display: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

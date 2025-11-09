@@ -60,7 +60,51 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Интернет-магазин кофе Drink2Go</h1>
+    <section class="hero" data-test="hero">
+      <div class="hero__wrapper container">
+        <h1 class="visually-hidden">Интернет-магазин кофе Drink2Go</h1>
+        <div class="hero__slider">
+          <ul class="hero__slider-list">
+            <li class="hero__slider-item">
+              <img src="./images/flat-white-mobile@2x.webp" alt="Банка кофе Декаф Флэт Уайт" class="hero__slider-image" width="280"
+                height="280">
+              <div class="hero__slider-content">
+                  <div class="section-title">
+                    <span class="section-title__description">Новинка!</span>
+                    <h2 class="section-title__text">Декаф Флэт Уайт</h2>
+                  </div>
+                <p class="hero__slider-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
+                  то, что
+                  нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="hero__slider-order">
+                  <div class="hero__slider-price">
+                    <span class="hero__slider-price-old">295₽</span>
+                    <span class="hero__slider-price-new">225₽</span>
+                  </div>
+                  <button class="hero__slider-order-button" type="button">Заказать</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="hero__slider-pagination">
+            <button class="hero__slider-pagination-button hero__slider-pagination-button--prev"
+              aria-label="Предыдущий слайд"></button>
+            <ul class="hero__slider-pagination-list">
+              <li>
+                <button class="hero__slider-pagination-indicator hero__slider-pagination-indicator--active" aria-label="Слайд 1"></button>
+              </li>
+              <li>
+                <button class="hero__slider-pagination-indicator" aria-label="Слайд 2"></button>
+              </li>
+              <li>
+                <button class="hero__slider-pagination-indicator" aria-label="Слайд 3"></button>
+              </li>
+            </ul>
+            <button class="hero__slider-pagination-button hero__slider-pagination-button--next" aria-label="Следующий слайд"></button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="features" data-test="features">
       <div class="features__wrapper container">
         <div class="section-title">
@@ -76,11 +120,12 @@
             </div>
           </li>
           <li class="features__item">
-            <img src="./images/feature-comfort.svg" alt="Иконка удобства" class="features__image" width="52" height="56">
+            <img src="./images/feature-comfort.svg" alt="Иконка удобства" class="features__image" width="52"
+              height="56">
             <div class="features__text-wrapper">
               <h3 class="features__title">Удобство</h3>
               <p class="features__description">Легко помещается и в карман,<br>
-              и в маленькую сумочку</p>
+                и в маленькую сумочку</p>
             </div>
           </li>
           <li class="features__item">
@@ -91,11 +136,12 @@
             </div>
           </li>
           <li class="features__item">
-            <img src="./images/feature-ecology.svg" alt="Иконка экологичности" class="features__image" width="52" height="56">
+            <img src="./images/feature-ecology.svg" alt="Иконка экологичности" class="features__image" width="52"
+              height="56">
             <div class="features__text-wrapper">
               <h3 class="features__title">Экологичность</h3>
               <p class="features__description">Вся упаковка сделана<br>
-              из перерабатываемых материалов</p>
+                из перерабатываемых материалов</p>
             </div>
           </li>
         </ul>
@@ -176,8 +222,10 @@
       <address class="main-footer__list-wrapper">
         <h4 class="main-footer__list-title">Контакты</h4>
         <ul class="main-footer__list main-footer__list--contacts">
-          <li class="main-footer__item main-footer__item--contacts main-footer__item--contacts-adress">Санкт-Петербург, набережная реки Карповки, дом 5</li>
-          <li class="main-footer__item main-footer__item--contacts main-footer__item--contacts-tel"><a href="tel:+79999999999" class="main-footer__link main-footer__link--contacts">+7 (999) 999-99-99</a></li>
+          <li class="main-footer__item main-footer__item--contacts main-footer__item--contacts-adress">Санкт-Петербург,
+            набережная реки Карповки, дом 5</li>
+          <li class="main-footer__item main-footer__item--contacts main-footer__item--contacts-tel"><a
+              href="tel:+79999999999" class="main-footer__link main-footer__link--contacts">+7 (999) 999-99-99</a></li>
         </ul>
       </address>
     </nav>
