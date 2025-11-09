@@ -13,12 +13,12 @@ const updateSlider = () => {
   prevButton.disabled = currentIndex === 0;
   nextButton.disabled = currentIndex === slides.length - 1;
 
-  indicators.forEach((button, i) => {
-    if (i === currentIndex) {
-      button.classList.add('hero__slider-pagination-indicator--active');
-    } else {
-      button.classList.remove('hero__slider-pagination-indicator--active');
-    }
+  indicators.forEach((btn, i) => {
+    btn.classList.toggle('hero__slider-pagination-indicator--active', i === currentIndex);
+  });
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('hero__slider-item--active', i === currentIndex);
   });
 };
 

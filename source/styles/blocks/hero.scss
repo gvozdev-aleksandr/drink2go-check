@@ -1,5 +1,17 @@
 .hero {
+  transition: background-color 0.7s ease;
+}
+
+.hero:has(.hero__slider-item--flat.hero__slider-item--active) {
   background-color: $flat-white;
+}
+
+.hero:has(.hero__slider-item--lavander.hero__slider-item--active) {
+  background-color: $lavender-latte;
+}
+
+.hero:has(.hero__slider-item--espresso.hero__slider-item--active) {
+  background-color: $espresso;
 }
 
 .hero__wrapper {
@@ -42,6 +54,18 @@
     gap: 30px;
     align-items: center;
   }
+}
+
+.hero__slider-item--flat {
+  background-color: $flat-white;
+}
+
+.hero__slider-item--lavander {
+  background-color: $lavender-latte;
+}
+
+.hero__slider-item--espresso {
+  background-color: $espresso;
 }
 
 .hero__slider-image {
