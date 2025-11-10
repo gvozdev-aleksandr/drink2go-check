@@ -26,7 +26,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 84px;
     margin-bottom: 0;
   }
 }
@@ -69,12 +69,13 @@
 }
 
 .hero__slider-image {
+  display: flex;
   width: 280px;
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 276px;
+    top: 292px;
     left: 50%;
     transform: translateX(-50%);
     width: 476px;
@@ -86,7 +87,8 @@
     top: 0;
     width: 600px;
     max-width: 600px;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-right: 10px;
   }
 }
 
@@ -97,6 +99,8 @@
 
   @media (min-width: $desktop-width) {
     align-items: start;
+    height: 100%;
+    padding-top: 150px;
   }
 }
 
@@ -105,6 +109,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: start;
   }
 }
 
@@ -116,6 +124,7 @@
 .hero__slider-content .section-title__text {
   font-size: 36px;
   line-height: 48px;
+  letter-spacing: 0.02em;
 
   @media (min-width: $tablet-width) {
     font-size: 56px;
@@ -148,6 +157,7 @@
   padding: 0 25px;
 
   @media (min-width: $desktop-width) {
+    gap: 21px;
     padding: 0;
   }
 }

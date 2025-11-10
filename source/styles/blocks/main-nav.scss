@@ -24,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-right: 60px;
     border: none;
   }
 
@@ -92,6 +93,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 32px 20px;
+    padding: 32px 20px 32px 21px;
   }
 }

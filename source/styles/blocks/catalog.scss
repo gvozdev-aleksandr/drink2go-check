@@ -25,14 +25,22 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
+}
+
+.catalog__wrapper .section-title__description {
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .catalog__product-selection {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-left: 3px;
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
@@ -45,11 +53,16 @@
     position: absolute;
     content: "";
     top: 11px;
-    right: 10px;
+    right: 7px;
     width: 10px;
     height: 10px;
     background-image: url("../../icons/select-arrow.svg");
     background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: 10px;
+    }
   }
 }
 
@@ -61,7 +74,7 @@
 .catalog__product-selection-title {
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .catalog__product-select {
@@ -73,12 +86,18 @@
   line-height: 24px;
   font-weight: 500;
   color: $base-primary;
+  border: none;
   border-radius: 4px;
   appearance: none;
 
   &:hover,
   &:focus {
     background-color: $base-secondary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $base-white;
   }
 }
 
@@ -94,10 +113,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 59px;
   }
 }
 
@@ -167,6 +188,7 @@
 .catalog__price-button {
   position: relative;
   padding: 8px 20px 8px 46px;
+  font-family: $montserrat;
   font-size: 14px;
   line-height: 20px;
   color: $base-white;
@@ -252,7 +274,11 @@
 
 .catalog__pagination-button--rpev,
 .catalog__pagination-button--next {
-  padding: 8px 20px;
+  padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
 }
 
 .catalog__pagination-button--rpev span,
@@ -266,6 +292,8 @@
 
 .catalog__pagination-button--rpev svg,
 .catalog__pagination-button--next svg {
+  display: block;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

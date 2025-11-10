@@ -53,7 +53,7 @@
           </button>
         </li>
         <li class="user-nav__item user-nav__item--toggle">
-          <button class="user-nav__button user-nav__button--toggle" type="button">
+          <button class="user-nav__button user-nav__button--toggle js-toggle-button" type="button">
             <span class="user-nav__button-icon"></span>
             <span class="user-nav__text">открыть меню</span>
           </button>
@@ -152,8 +152,8 @@
               </div>
             </li>
           </ul>
-          <div class="hero__slider-pagination">
-            <button class="hero__slider-pagination-button hero__slider-pagination-button--prev"
+          <div class="hero__slider-pagination slider-pagination">
+            <button class="hero__slider-pagination-button hero__slider-pagination-button--prev slider-button-prev"
               aria-label="Предыдущий слайд"></button>
             <ul class="hero__slider-pagination-list">
               <li class="hero__slider-pagination-item">
@@ -166,7 +166,7 @@
                 <button class="hero__slider-pagination-indicator" type="button" aria-label="Слайд 3"></button>
               </li>
             </ul>
-            <button class="hero__slider-pagination-button hero__slider-pagination-button--next" aria-label="Следующий слайд"></button>
+            <button class="hero__slider-pagination-button hero__slider-pagination-button--next slider-button-next" aria-label="Следующий слайд"></button>
           </div>
         </div>
       </div>
@@ -349,7 +349,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -364,7 +364,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -379,7 +379,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -394,7 +394,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -409,7 +409,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -424,7 +424,7 @@
               </picture>
               <h3 class="catalog__product-title">Декаф Флэт Уайт</h3>
               <p class="catalog__product-description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
+                с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__price-wrapper">
                 <span class="catalog__price">225₽</span>
                 <button class="catalog__price-button" type="button">В корзину</button>
@@ -471,7 +471,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
+  <footer class="main-footer container" data-test="footer">
     <div class="main-footer__links">
       <a href="" class="main-footer__logo logo">
         <picture>
@@ -538,7 +538,7 @@
         </ul>
       </div>
       <address class="main-footer__list-wrapper">
-        <h4 class="main-footer__list-title">Контакты</h4>
+        <h4 class="main-footer__list-title main-footer__list-title--adress">Контакты</h4>
         <ul class="main-footer__list main-footer__list--contacts">
           <li class="main-footer__item main-footer__item--contacts main-footer__item--contacts-adress">Санкт-Петербург,
             набережная реки Карповки, дом 5</li>
